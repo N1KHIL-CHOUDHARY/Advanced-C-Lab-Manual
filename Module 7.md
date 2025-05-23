@@ -15,7 +15,7 @@ Else
 6.	Return 0
  
 Program:
-
+```
 #include <stdio.h>
 #include <string.h>
 
@@ -41,7 +41,7 @@ int main() {
     }
     return 0;
 }
-
+```
 
 
 Output:
