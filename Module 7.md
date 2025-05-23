@@ -44,7 +44,35 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+#include <string.h>
+
+struct eligible {
+    char n[30];
+    int age;
+};
+
+int main() {
+    struct eligible e[3];
+    for (int i = 0; i < 3; i++) {
+        printf("Enter name: ");
+        scanf("%s", e[i].n);
+        printf("Enter age: ");
+        scanf("%d", &e[i].age);
+
+        printf("Name: %s\n", e[i].n);
+        printf("Age: %d\n", e[i].age);
+        if (e[i].age <= 6)
+            printf("Vaccine Eligibility: No\n");
+        else
+            printf("Vaccine Eligibility: Yes\n");
+    }
+    return 0;
+}
+
+
+```
 
 
 
